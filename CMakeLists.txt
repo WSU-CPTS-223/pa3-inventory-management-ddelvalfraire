@@ -7,6 +7,10 @@ project(PA3)
 
 set(SOURCE 
     src/main.cpp
+    src/parser.cpp
+    src/inventory.cpp
+    src/app.cpp
+    src/product.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE})

@@ -28,4 +28,8 @@ run: all
 clean:
 	rm -rf build
 
-.PHONY: all run clean
+test: all
+	$(CXX) $(CXXFLAGS) tests/test.cpp -o build/test
+	./build/test	
+
+.PHONY: all run clean test
